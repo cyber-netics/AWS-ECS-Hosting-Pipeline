@@ -1,5 +1,5 @@
 # Build
-FROM node:14.15.4 as builder
+FROM node:14.16.0 as builder
 WORKDIR /app
 
 COPY . ./
@@ -8,7 +8,7 @@ RUN npm run build
 
 
 # Production
-FROM node:14.15.4
+FROM node:14.16.0
 WORKDIR /app
 
 COPY package*.json ./
