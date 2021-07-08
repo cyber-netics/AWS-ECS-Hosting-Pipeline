@@ -1,5 +1,5 @@
 # Build
-FROM node:14.15.4 as builder
+FROM node:14.17 as builder
 WORKDIR /app
 
 COPY . ./
